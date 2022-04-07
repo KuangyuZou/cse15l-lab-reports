@@ -21,3 +21,5 @@ Horizontal rule:
 print '3 backticks or'
 print 'indent 4 spaces'
 ```
+I like ice cream with flavor of strawberry, vanilla and matcha.
+I'm a great fan of matcha!
