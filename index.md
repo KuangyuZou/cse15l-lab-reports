@@ -23,3 +23,4 @@ print 'indent 4 spaces'
 ```
 I like ice cream with flavor of strawberry, vanilla and matcha.
 I'm a great fan of matcha!
+[Lab Report 1](lab-report-1-week-2.html)
