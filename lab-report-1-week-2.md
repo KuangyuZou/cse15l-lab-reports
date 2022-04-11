@@ -19,3 +19,5 @@ This is the step to create a ssh-keygen pair in the computer.
 ![Image](NoPasswordlogin.png)
 After creating the ssh-keygen pair, we don't need to login with the password. 
 
+![Image](Task7.png)
+This is the step that can run the file in remote server. 
