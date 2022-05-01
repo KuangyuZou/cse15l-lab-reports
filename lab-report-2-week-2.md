@@ -20,8 +20,8 @@ After fix the code, the picture below shows that the code has a correct output w
 ![Image](fixcodechangetest3.png)
 
 
-The first code results in an infinite loop because the code ends with the blank line. When we delete the blank line, then the loop will run successfully. 
+The first code results in an index out of bound problem because there is no link in the newtest file, so the code does not find the opened parenthese and the closed parenthese. Therefore, there is no substring between the parentheses since no parentheses found. So the code will have index out of bound problem when call the method "markdown.substring(Openparen+1, closeParen)", the screenshot of output indicates "it begins at 0, but ends with -1". So if we want to fix the bug, we just need to add a condition at the front when the index of OpenParen is 0, then the code should break and return an empty list. 
 
-The second code results in only the last link content be returned. The reason is that this code ends with the valid link, the first link in newtest-file.md is not a valid link, so the results will not include the content in the first brackets. 
+The second code results in an infinite loop because the link is at the start of the test2 file, so the currentindex will always less than the markdown length. Therefore, in the while condition statement, since the currentIndex will always less than the markdown length, the while loop will infite. If we want to fix the bug, we just need to add another condition at the front which is when the Openbracket index is 0, then the code should directly return the string in the link, instead of increase the currentIndex value.
 
-The third code results in an infinite loop because the code ends with the invalid link which is the bracktes. The valid link is in the middle so our code will run into an infinite loop that have no result. 
+The third code results in a wrong output since this is actually an image refrence not the link. So we need to change code to verify whether the refrence is a link or an Image. So we need to add another condition at front which is when the string in the bracket is "Image", then the code should verify that this is not a link and should break and return an empty list. 
