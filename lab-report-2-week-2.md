@@ -2,16 +2,22 @@
 ![Image](firstcodechange.png)
 [newtest-file](https://kuangyuzou.github.io/markdown-parser/newtest-file.html)
 ![Image](firstcodechangeOutput.png)
+After fix the code, the picture below shows that the code pass the test and also the origial testfile can also be passed.
+![Image](fixcodepasstest1.png)
 
 # Second Code Change
 ![Image](secondcodechange.png)
-[newtest-file](newtest-file.html)
+[test2-file](https://kuangyuzou.github.io/markdown-parser/test2-file.html)
 ![Image](secondcodechangeOutput.png)
+After fix the code, the picture below shows that the code pass the test and also the origial two testfiles also passed.
+![Image](fixcodepasstest2.png)
 
 # Third Code Change
 ![Image](thirdcodechange.png)
-[test2-file](test2-file.html)
+[test3-file](https://kuangyuzou.github.io/markdown-parser/test3-file.html)
 ![Image](thirdcodechangeOutput.png)
+After fix the code, the picture below shows that the code has a correct output which will not return the string in the parentheses sice this is the image refrence.
+![Image](fixcodechangetest3.png)
 
 
 The first code results in an infinite loop because the code ends with the blank line. When we delete the blank line, then the loop will run successfully. 
