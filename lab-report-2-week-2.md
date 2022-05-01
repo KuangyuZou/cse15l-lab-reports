@@ -1,6 +1,6 @@
 # First Code Change
 ![Image](firstcodechange.png)
-[test-file](test-file.html)
+[newtest-file](https://kuangyuzou.github.io/markdown-parser/newtest-file.html)
 ![Image](firstcodechangeOutput.png)
 
 # Second Code Change
