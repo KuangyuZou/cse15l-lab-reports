@@ -25,6 +25,7 @@ I create a new ssh-keygen pair in remote server account. Then I copy the public 
 This picture below shows that I successfully access my repository of github and using git command on remote server to push and update the markdownParse java file.
 ![Image](task2sixth.png)
 
+In the main method of MarkdownParse.java file, I add a new line to print out the "good day" in the end.
 [Resulting Commit](https://github.com/KuangyuZou/markdown-parser/blob/main/MarkdownParse.java)
 
 # Copy whole directories with scp -r
