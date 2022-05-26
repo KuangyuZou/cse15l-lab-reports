@@ -6,10 +6,14 @@
 # For Each Test Task
 1.Using VSCode Preview,
 
-the Snippet1 should has the result as [`google.com google.com ucsd.edu]
+the Snippet1 should has the result as [`google.com,google.com, ucsd.edu]
 
-the Snippet2 should has the result as [a.com a.com(()) example.com]
+the Snippet2 should has the result as [a.com,a.com(()), example.com]
 
-the Snippet3 should has the result as [https://www.twitter.com https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule https://cse.ucsd.edu/]
+the Snippet3 should has the result as [https://www.twitter.com, https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule, https://cse.ucsd.edu/]
 
-2.
+2. The screenshot below shows the test for Snippet1,2,3 in my own MarkdownTest.java
+![Image](first.png)
+
+The screenshot below shows the test for Snippet1,2,3 in the reviewed MarkdownTest.java.
+![Image]()
