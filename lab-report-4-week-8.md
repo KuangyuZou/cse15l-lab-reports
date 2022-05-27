@@ -16,4 +16,8 @@ the Snippet3 should has the result as [https://www.twitter.com, https://sites.go
 ![Image](first.png)
 
 The screenshot below shows the test for Snippet1,2,3 in the reviewed MarkdownTest.java.
-![Image]()
+![Image](second.png)
+
+
+3.The screenshot below shows the test outputs by my own implemention of MarkdownParse.java.
+
