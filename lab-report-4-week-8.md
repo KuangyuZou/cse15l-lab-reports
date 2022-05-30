@@ -37,8 +37,7 @@ From the result, the test for Snippet2 is also failed. The actual result has the
 
 3). The screenshot below shows the test outputs of Snippet3.md by my own implemention of MarkdownParse.java.
 ![Image](ownoutput3.png)
-From the result, the test for Snippet3 is also failed. The actual result runs into an infinite loop so that the terminal indicates "Out of Memory Error". The reason is that since Snippet3.md does not end with a valid link. This file ends with a string. Since in my code, the condition for while loop is that the currentIndex is less than the markdown file's length. So if the file does not ends with a link, then the currentIndex will never reach the length of the file, so the while loop will always be true and never stop to run in infinity. 
-I think the code change is less than 10 lines since we just need to change the condition of while loop to the currentIndex less than the last closedParen poisition. Therefore, if the file does not end with a link, it will not run into infinity.
+From the result, the test for Snippet3 is also failed. The actual result runs into an infinite loop so that the terminal indicates "Out of Memory Error". The reason is that since after the last closeParen of the last link,  the currentIndex can not find the next openBracket, so the currentIndex will eventually become -1. In the while condition, if the currentIndex is less than the total length of the file, then the condition is true. Since -1 is less than the length of the file, so the code run into infinite loop. The code change will less than 10 lines since we just need to add additional if statement which is that if the currentIndex is equal to -1, then the code should break. 
 
 ## 4.Test Output for reviewed repository and Explaning
 1).The screenshot below shows the test outputs of Snippet1.md by reviewed implemention of MarkdownParse.java.
