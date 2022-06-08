@@ -36,3 +36,9 @@ The actual output from the given repository is the below screenshot showing:
 # Wrong Output Explaination
 1. For the 508.md test file, my implemention is correct but the given implemention is wrong. The given implemention returns nothing which is an empty list. The reason is that, from the code below:
 ![Image](given_code.png)
+if any nextOpenBracket or nextCloseBracket or closeParen or openParen equals to -1, the code just return the list immediately.Using System.out.println, it shows that the nextOpenBracket will become -1 after the loop because of the currentIndex will increased by 1 in the next else-if statement. So finally the code just return an empty list. I think that the code need to be fixed is the currentIndex should be updated by closeParen+1, not the currentIndex+1. The content under else statement need to be changed. 
+![Image](highlight1.JPG)
+
+2. For the 487.md test file, my implemention is incorrect. The reason is that, my code lose an additional if statement to verify whether the link content with space between them is a valid link or not. Actually, from the preview in VSCode, we know that if the link has space between characters in them, it is not a valid link. So the code change is to add an additional statement to verify that if there is any space in the link, then should return nothing and continue to check next link or return an empty list if this link is th only one link in the md file. 
+Here below is my code image:
+![Image](highlight2.JPG)
